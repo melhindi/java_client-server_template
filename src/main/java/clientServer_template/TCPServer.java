@@ -28,7 +28,7 @@ public class TCPServer extends Thread {
 				handler.handle(socket, pool);
 			}
 		} catch (SocketException e) {
-			// Beim Aufruf von stopServer() wird eine SocketException ausgeloest
+			// When stopServer() is called, a SocketException is thrown
 		} catch (Exception e) {
 			System.err.println(e);
 		}
